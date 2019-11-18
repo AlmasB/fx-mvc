@@ -2,16 +2,11 @@ package com.almasb.fx.mvc;
 
 import javafx.scene.Parent;
 
-public abstract class Controller<M, V extends Parent> {
+public abstract class ControllerWithModelView<M, V extends Parent> extends ControllerWithView<V> {
 
     private M model;
-    private V view;
 
     public final M getModel() {
         return model;
-    }
-
-    public final V getView() {
-        return view;
     }
 }

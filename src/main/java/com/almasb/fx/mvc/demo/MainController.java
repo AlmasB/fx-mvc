@@ -1,14 +1,15 @@
 package com.almasb.fx.mvc.demo;
 
-import com.almasb.fx.mvc.Controller;
-import com.almasb.fx.mvc.Model;
+import com.almasb.fx.mvc.ControllerWithView;
 import javafx.scene.layout.BorderPane;
 
-@Model(CalculatorModel.class)
-public class MainController extends Controller<CalculatorModel, BorderPane> {
+public class MainController extends ControllerWithView<BorderPane> {
 
+    public void openView1() {
+        switchViewTo(Views.VIEW1);
+    }
 
-    public void runSomething() {
-        System.out.println(getModel());
+    public void openView2() {
+        switchViewTo(Views.VIEW2);
     }
 }

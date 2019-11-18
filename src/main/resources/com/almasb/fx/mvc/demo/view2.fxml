@@ -6,9 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Text?>
 <VBox xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.almasb.fx.mvc.demo.Controller2"
-            prefHeight="600.0" prefWidth="800.0">
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.almasb.fx.mvc.demo.Controller2"
+      prefHeight="600.0" prefWidth="800.0">
+
+    <TextArea />
+
+    <Text text="View 2 text here" />
 
 </VBox>

@@ -1,14 +1,21 @@
 package com.almasb.fx.mvc.demo;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+
 public class CalculatorModel {
 
-    private int lastResult = 0;
+    private IntegerProperty lastResult = new SimpleIntegerProperty();
 
     public int getLastResult() {
-        return lastResult;
+        return lastResult.getValue();
     }
 
     public void setLastResult(int lastResult) {
-        this.lastResult = lastResult;
+        this.lastResult.setValue(lastResult);
+    }
+
+    public IntegerProperty lastResultProperty() {
+        return lastResult;
     }
 }

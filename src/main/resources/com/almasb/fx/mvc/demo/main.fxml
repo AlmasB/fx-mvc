@@ -12,6 +12,13 @@
             fx:controller="com.almasb.fx.mvc.demo.MainController"
             prefHeight="600.0" prefWidth="800.0">
 
+    <top>
+        <HBox>
+            <Button text="Open View 1" onAction="#openView1" />
+            <Button text="Open View 2" onAction="#openView2" />
+        </HBox>
+    </top>
+
     <center>
         <Text text="Hello World fx-mvc" />
     </center>
