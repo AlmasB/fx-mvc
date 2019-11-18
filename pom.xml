@@ -48,7 +48,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <source.version>13</source.version>
+        <source.version>12</source.version>
 
         <!-- plugins -->
         <maven.gpg.version>1.6</maven.gpg.version>
@@ -61,7 +61,7 @@
         <maven.surefire.version>2.22.2</maven.surefire.version>
 
         <!-- dependencies -->
-        <javafx.version>13.0.1</javafx.version>
+        <javafxlib.version>13.0.1</javafxlib.version>
 
         <!-- test dependencies -->
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
@@ -72,13 +72,13 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version>
+            <version>${javafxlib.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version>
+            <version>${javafxlib.version}</version>
         </dependency>
 
         <!-- test scope dependencies -->
@@ -142,7 +142,7 @@
                             <goal>jar</goal>
                         </goals>
                         <configuration> <!-- add this to disable checking -->
-                            <additionalparam>-Xdoclint:none</additionalparam>
+<!--                            <additionalparam>-Xdoclint:none</additionalparam>-->
                             <!-- leave only errors and warning -->
                             <quiet>true</quiet>
                         </configuration>
