@@ -60,12 +60,27 @@
         <jacoco.version>0.8.4</jacoco.version>
         <maven.surefire.version>2.22.2</maven.surefire.version>
 
+        <!-- dependencies -->
+        <javafx.version>13.0.1</javafx.version>
+
         <!-- test dependencies -->
         <junit.jupiter.version>5.5.2</junit.jupiter.version>
         <hamcrest.version>1.3</hamcrest.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+
         <!-- test scope dependencies -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
