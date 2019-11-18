@@ -4,6 +4,8 @@ import javafx.scene.Parent;
 
 public abstract class ControllerWithView<V extends Parent> {
 
+    private App app;
+
     private V view;
 
     public final V getView() {
@@ -11,7 +13,7 @@ public abstract class ControllerWithView<V extends Parent> {
     }
 
     public final void switchViewTo(ViewName viewName) {
-
+        app.switchViewTo(viewName);
     }
 
     public final void switchViewTo(ViewName viewName, Bundle bundle) {

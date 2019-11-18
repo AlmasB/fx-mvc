@@ -12,6 +12,8 @@
       fx:controller="com.almasb.fx.mvc.demo.Controller2"
       prefHeight="600.0" prefWidth="800.0">
 
+    <Button text="Back" onAction="#openMainView" />
+
     <TextArea />
 
     <Text text="View 2 text here" />

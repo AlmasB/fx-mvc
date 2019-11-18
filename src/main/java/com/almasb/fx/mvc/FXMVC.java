@@ -34,6 +34,17 @@ public class FXMVC {
             Parent view = loader.load();
             ControllerWithView<?> controller = loader.getController();
 
+            getFieldByName("app", controller).ifPresent(field -> {
+
+                field.setAccessible(true);
+
+                try {
+                    field.set(controller, app);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            });
+
             if (controller instanceof ControllerWithModelView) {
                 ParameterizedType genericSuperclass = (ParameterizedType) controller.getClass().getGenericSuperclass();
                 Class<?> modelClass = (Class<?>) genericSuperclass.getActualTypeArguments()[0];
