@@ -13,14 +13,14 @@
             prefHeight="600.0" prefWidth="800.0">
 
     <top>
-        <HBox>
-            <Button text="Open View 1" onAction="#openView1" />
-            <Button text="Open View 2" onAction="#openView2" />
+        <HBox alignment="CENTER" spacing="20">
+            <Button prefWidth="310.0" prefHeight="500.0" text="Open View 1" onAction="#openView1" />
+            <Button prefWidth="310.0" prefHeight="500.0" text="Open View 2" onAction="#openView2" />
         </HBox>
     </top>
 
     <center>
-        <Text text="Hello World fx-mvc" />
+        <Text text="Dashboard" />
     </center>
 
 </BorderPane>

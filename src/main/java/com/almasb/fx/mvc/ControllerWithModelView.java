@@ -9,4 +9,8 @@ public abstract class ControllerWithModelView<M, V extends Parent> extends Contr
     public final M getModel() {
         return model;
     }
+
+    public void onModelInitialized() {
+
+    }
 }

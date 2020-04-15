@@ -45,6 +45,8 @@ public class FXMVC {
                 }
             });
 
+            controller.onViewInitialized();
+
             if (controller instanceof ControllerWithModelView) {
                 ParameterizedType genericSuperclass = (ParameterizedType) controller.getClass().getGenericSuperclass();
                 Class<?> modelClass = (Class<?>) genericSuperclass.getActualTypeArguments()[0];
@@ -61,6 +63,8 @@ public class FXMVC {
                         e.printStackTrace();
                     }
                 });
+
+                ((ControllerWithModelView<?, ?>) controller).onModelInitialized();
             }
 
             return view;

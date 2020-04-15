@@ -8,15 +8,15 @@ public abstract class ControllerWithView<V extends Parent> {
 
     private V view;
 
+    public void onViewInitialized() {
+
+    }
+
     public final V getView() {
         return view;
     }
 
     public final void switchViewTo(ViewName viewName) {
         app.switchViewTo(viewName);
-    }
-
-    public final void switchViewTo(ViewName viewName, Bundle bundle) {
-
     }
 }

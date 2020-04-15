@@ -18,4 +18,6 @@
 
     <Text text="View 2 text here" />
 
+    <Button fx:id="btn" onAction="#randomize" />
+
 </VBox>

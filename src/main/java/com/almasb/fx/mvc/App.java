@@ -30,8 +30,4 @@ public class App {
         Parent view = views.get(viewName);
         stage.getScene().setRoot(view);
     }
-
-    public final void switchViewTo(ViewName viewName, Bundle bundle) {
-
-    }
 }

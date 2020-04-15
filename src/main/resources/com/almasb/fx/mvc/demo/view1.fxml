@@ -7,6 +7,7 @@
 <?import javafx.scene.layout.*?>
 
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.canvas.Canvas?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.almasb.fx.mvc.demo.Controller1"
@@ -14,8 +15,6 @@
 
     <Button text="Back" onAction="#openMainView" />
 
-    <Text text="View 1 text here" />
-
-    <TextArea />
+    <TextField fx:id="fieldValue" />
 
 </VBox>
